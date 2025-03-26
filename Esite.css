@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 100;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav .logo img {
+    height: 60px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.home {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 100px 50px 200px 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.555),transparent,rgba(0, 0, 0, 0.473)), url('img/PSD%20fashion%20clothes%20social%20media%20post%20amp%20instagram%20template.jpeg');
+    background-repeat: no-repeat;
+    background-position-x: 800px;
+    background-position-y:50px ;
+    height: 100%;
+}
+
+.texts {
+    flex: 1;
+    color: white;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+.texts h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.texts p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.texts button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:rgb(21, 19, 19);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+/*--------featuerd------*/
+.featured {
+    padding: 50px 50px 100px 40px;
+    text-align: center;
+    background: rgb(1,0,20);
+background: linear-gradient(160deg, rgba(1,0,20,0.9831582291119573) 0%, rgba(0,0,0,0.6582282571231617) 24%, rgba(0,0,0,0.8543066884957108) 42%, rgba(13,14,14,1) 100%);
+}
+.featured h1 {
+    font-size: var(--h2-font);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.featured .col {
+    padding: 15px;
+}
+.featured img {
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.featured img:hover {
+    transform: scale(1.05);
+}
+.new{
+    padding: 20px 50px 100px 40px;
+}
+.new img {
+    width: 100%;
+    max-width: 250px; 
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.new .col{
+    padding: 15px;
+}
+.new img:hover {
+    transform: scale(1.05);
+}
+.new h1 {
+    font-size: var(--h2-font);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.new p{
+    text-align: center;
+}
+/* Footer Styling */
+#contact {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-logo h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffffb9;
+    margin-bottom: 20px;
+}
+
+.contact-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.contact-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color:#ffffffb9;
+}
+
+.contact-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-column ul li {
+    margin-bottom: 8px;
+}
+
+.contact-column ul li a {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-column ul li a:hover {
+    color:#ffffffb9;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffffffb9;
+}
+
+/* App Links */
+.app-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.app-links img {
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.app-links img:hover {
+    transform: scale(1.05);
+}
+
+/* Bottom Text */
+.contact-bottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #bbb;
+}
+
+.contact-bottom a {
+    color: #ffffffb9;
+    text-decoration: none;
+}
+
+.contact-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Divider Line */
+hr {
+    border: none;
+    height: 1px;
+    background: #444;
+    margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-sections {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .app-links {
+        justify-content: center;
+    }
+}
